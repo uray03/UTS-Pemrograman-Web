@@ -1,0 +1,124 @@
+/* General Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    color: #333;
+    line-height: 1.6;
+    background-image: url('ABC_Bank_Background.png');
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+}
+
+/* Kontainer utama untuk login/registrasi */
+.container {
+    max-width: 400px;
+    margin: 5rem auto;
+    background-color: rgba(255, 255, 255, 0.9);
+    padding: 2rem;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Header di formulir */
+.container h1 {
+    text-align: center;
+    font-size: 2.5rem;
+    color: #007BFF;
+    margin-bottom: 1rem;
+}
+
+.container p {
+    text-align: center;
+    color: #555;
+    margin-bottom: 1.5rem;
+}
+
+/* Label dan input */
+.container label {
+    display: block;
+    margin-bottom: 0.5rem;
+    font-weight: bold;
+    color: #333;
+}
+
+.container input {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 1rem;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 1rem;
+}
+
+.container input:focus {
+    border-color: #007BFF;
+    outline: none;
+}
+
+/* Tombol */
+.container .btn {
+    display: block;
+    width: 100%;
+    padding: 10px;
+    font-size: 1.1rem;
+    color: white;
+    background-color: #007BFF;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    text-align: center;
+    transition: background-color 0.3s;
+}
+
+.container .btn:hover {
+    background-color: #0056b3;
+}
+
+/* Tautan */
+.container a {
+    color: #007BFF;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.container a:hover {
+    text-decoration: underline;
+}
+
+/* Pesan sukses dan error */
+#message {
+    text-align: center;
+    margin-top: 1rem;
+    font-size: 1rem;
+    font-weight: bold;
+}
+
+#message.success {
+    color: #4caf50;
+}
+
+#message.error {
+    color: #f44336;
+}
+
+/* Responsif */
+@media (max-width: 768px) {
+    .container {
+        margin: 2rem auto;
+        padding: 1.5rem;
+    }
+
+    .container h1 {
+        font-size: 2rem;
+    }
+
+    .container p {
+        font-size: 0.9rem;
+    }
+}
